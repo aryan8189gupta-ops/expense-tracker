@@ -1,0 +1,228 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Disable Right Click</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).on("contextmenu", function (e) {
+                e.preventDefault();
+                alert("Right-click is disabled!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Right-click is disabled on this page.</h2>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll to Top</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#topImage").click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+
+        });
+    </script>
+
+    <style>
+        body {
+            height: 1500px;
+        }
+
+        #topImage {
+            width: 100px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Scroll Down</h1>
+
+    <p>This is a long page. Scroll down and click the image.</p>
+
+    <img id="topImage"
+         src="OIP (2).jpeg"
+         alt="Scroll to Top">
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Mouseover Event</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("p").mouseover(function() {
+                $(this).css("color", "red");
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>Mouseover Example</h2>
+
+    <p>Move your mouse over this paragraph.</p>
+    <p>This paragraph will also become red.</p>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Show Hide Message</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#show").click(function() {
+                $("#message").show();
+            });
+
+            $("#hide").click(function() {
+                $("#message").hide();
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <button id="show">Show Message</button>
+    <button id="hide">Hide Message</button>
+
+    <div id="message">
+        This is a message inside the div tag.
+    </div>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Add Class using jQuery</title>
+
+    <style>
+        .highlight {
+            color: white;
+            background-color: blue;
+            padding: 10px;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                $("#para").addClass("highlight");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p id="para">This is a paragraph.</p>
+    <button id="btn">Add Class</button>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Element Position</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+
+                var position = $("#box").position();
+
+                alert("Top: " + position.top +
+                      "\nLeft: " + position.left);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="box" style="margin: 50px; width: 100px; height: 100px; background: yellow;">
+        Box
+    </div>
+
+    <button id="btn">Get Position</button>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Animation</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+
+                $("#box").animate({
+                    width: "200px",
+                    height: "150px",
+                    padding: "30px",
+                    marginLeft: "100px",
+                    opacity: 0.5
+                }, 1000);
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="box">Hello</div>
+    <br>
+
+    <button id="btn">Animate</button>
+
+</body>
+</html>
